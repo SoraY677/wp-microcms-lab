@@ -6,9 +6,9 @@
     "install": "run-s install:*",
     "install:client": "cd client & yarn install",
     "dev": "run-p dev:*",
-    "dev:client": "yarn client:dev",
+    "dev:client": "yarn --cwd client dev",
     "build": "run-p build:*",
-    "build:client": "yarn client:build"
+    "build:client": "yarn --cwd client build"
   },
   "repository": "git@github.com:SoraY677/wp-microcms-lab.git",
   "author": "soray677 <soray677@outlook.com>",

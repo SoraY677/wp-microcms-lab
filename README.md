@@ -29,6 +29,20 @@ yarn dev
 - client: [http://localhost:3000]で表示
 - wordpress: [http://localhost:8000]で表示
 
+#### コンテナアクセス
+
+- wordpress
+
+```bash
+yarn bash-wp
+```
+
+- db
+
+```bash
+yarn bash-db
+```
+
 #### 製品モードでビルド
 ```build
 yarn build

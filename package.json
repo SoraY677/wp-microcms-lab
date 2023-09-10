@@ -9,7 +9,9 @@
     "dev:client": "yarn --cwd client dev",
     "dev:wordpress": "yarn --cwd wordpress dev",
     "build": "run-p build:*",
-    "build:client": "yarn --cwd client build"
+    "build:client": "yarn --cwd client build",
+    "bash-wp": "yarn --cwd wordpress bash-wp",
+    "bash-db": "yarn --cwd wordpress bash-db"
   },
   "repository": "git@github.com:SoraY677/wp-microcms-lab.git",
   "author": "soray677 <soray677@outlook.com>",

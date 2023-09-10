@@ -2,7 +2,9 @@
   "name": "wordpress",
   "version": "1.0.0",
   "scripts": {
-    "dev": "docker-compose up -d"
+    "dev": "docker-compose up -d",
+    "bash-wp": "docker-compose exec wordpress /bin/bash",
+    "bash-db": "docker-compose exec db /bin/bash"
   },
   "license": "MIT"
 }

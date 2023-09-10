@@ -26,7 +26,8 @@ yarn install
 ```bash
 yarn dev
 ```
--> [http://localhost:3000]で表示
+- client: [http://localhost:3000]で表示
+- wordpress: [http://localhost:8000]で表示
 
 #### 製品モードでビルド
 ```build

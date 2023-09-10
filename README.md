@@ -43,6 +43,7 @@ yarn bash-wp
 
 ```bash
 yarn bash-db
+# -> passwordには「pass」を入力
 ```
 
 #### 製品モードでビルド

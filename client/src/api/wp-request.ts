@@ -10,7 +10,7 @@ const axiosInstance = axios.create({
 /**
  * GET
  */
-export async function get<T>(query: string, { variables }: Record<string, any> = {}){
+export async function get<T>(query: string, { variables }: Record<string, any> = {}): Promise<T | undefined>{
     const body = {
         query,
         variables
@@ -18,10 +18,9 @@ export async function get<T>(query: string, { variables }: Record<string, any> =
 
     try {
         const response = await axiosInstance.post('/', body)
-        console.log(response)
-        return {} as T
+        return response.data?.data as T
     } catch (e){
         console.error(e)
-        return null
+        return undefined
     }
 }

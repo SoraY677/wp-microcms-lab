@@ -39,10 +39,17 @@ yarn dev
 yarn bash-wp
 ```
 
-- db
+- rootでdbアクセス
 
 ```bash
 yarn bash-db
+# -> passwordには「root」を入力
+```
+
+- userでdbアクセス
+
+```bash
+yarn bash-db-user
 # -> passwordには「pass」を入力
 ```
 

@@ -4,7 +4,9 @@
   "scripts": {
     "dev": "docker-compose up",
     "bash-wp": "docker-compose exec wordpress /bin/bash",
-    "bash-db": "docker-compose exec db  mysql -u user -p db"
+    "bash-db-root": "docker-compose exec db mysql -u root -p db",
+    "bash-db-user": "docker-compose exec db mysql -u root -p db"
+    
   },
   "license": "MIT"
 }

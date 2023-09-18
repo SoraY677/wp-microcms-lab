@@ -1,6 +1,20 @@
 import BasicLayout from '@/layout/basic'
 import type { NextPageWithLayout } from './_app'
 import { ReactElement } from 'react'
+import { get } from '@/api/wp-request'
+
+get(`query PostListQuery {
+  posts {
+    edges {
+      node {
+        title
+        id
+        date
+        content
+      }
+    }
+  }
+}`)
 
 const Page: NextPageWithLayout = () => {
   return (

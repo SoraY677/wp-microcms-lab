@@ -27,7 +27,7 @@ yarn install
 yarn dev
 ```
 - client: [http://localhost:3000]で表示
-- wordpress: [http://localhost:8000]で表示
+- wordpress: [http://localhost:8000/wp-admin]で表示
   - ユーザ名: user
   - パスワード: pass
 
